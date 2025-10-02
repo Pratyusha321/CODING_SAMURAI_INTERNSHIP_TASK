@@ -1,62 +1,73 @@
-# 🖩 Simple Calculator (Python)
+# 📌 To-Do List Project 📝
 
-This is a simple **command-line calculator** built in Python.  
-It was developed as part of the **Coding Samurai Python Development Internship**.
+A simple **To-Do List application** built in Python with both **CLI (Command Line)** and **GUI (Tkinter)** versions.  
+This project helps manage daily tasks with options to add, delete, view, and mark tasks as completed.  
+Tasks are stored in a `tasks.txt` file so they remain saved even after closing the program.
 
 ---
 
 ## 🚀 Features
-- Perform **Addition**
-- Perform **Subtraction**
-- Perform **Multiplication**
-- Perform **Division** (with zero division check)
-- User-friendly menu and error handling
+
+- ✅ Add new tasks  
+- ✅ View all tasks  
+- ✅ Mark tasks as Completed  
+- ✅ Delete tasks  
+- ✅ Persistent storage (`tasks.txt`)  
+- ✅ Two versions:
+  - `todo_list.py` → CLI version (runs in terminal)  
+  - `todo_gui.py` → GUI version (Tkinter-based)  
 
 ---
 
-## 📂 Project Structure
-/SimpleCalculator
-├── calculator.py # Main calculator program
-└── README.md # Documentation
+## 🖥️ Screenshots
 
+**GUI Version:**  
 
----
+![To-Do List GUI](screenshot_gui.png)  
+*Replace `screenshot_gui.png` with your actual GUI screenshot file.*
 
-## ▶️ How to Run
+**CLI Version Example:**
+```text
+====== TO-DO LIST ======
 
-1. Clone this repository or download the project folder.  
-2. Open a terminal/command prompt inside the folder.  
-3. Run the program with:  
+View Tasks
+
+Add Task
+
+Mark Task as Completed
+
+Delete Task
+
+Exit
+👉 Enter your choice: 2
+➕ Enter new task: Finish coding assignment
+✅ Task added!
+```
+## ⚡ How to Run
+
+### ▶ Run CLI Version
 ```bash
-python calculator.py
+python todo_list.py
 ```
+### ▶ Run GUI Version
+```bash
+python todo_gui.py
 ```
-## 💡 Example Run
-
------- Simple Calculator ------
-Select operation:
-1. Add
-2. Subtract
-3. Multiply
-4. Divide
-
-Enter choice (1/2/3/4) or 'q' to quit: 1
-Enter first number: 10
-Enter second number: 5
-✅ Result: 10.0 + 5.0 = 15.0
+## 📂 Project Structure
+```text
+ToDoList/
+│── todo_list.py       # CLI version
+│── todo_gui.py        # GUI (Tkinter) version
+│── tasks.txt          # Stores tasks (auto-created)
+│── README.md          # Documentation
+│── screenshot_gui.png # GUI screenshot
 ```
+## 🛠 Requirements
 
-🎯 Internship Task
+- Python 3.x
+- Tkinter (comes pre-installed with Python)
 
-This project is part of the Level 1 (Beginner) tasks for the Coding Samurai Internship.
-It demonstrates Python basics like:
+📌 Author
 
-Functions
-
-Loops
-
-Conditionals
-
-Exception handling
-
-User input/output
+👩‍💻 Developed by Kona Pratyusha
+📍 Coding Samurai Internship Task
